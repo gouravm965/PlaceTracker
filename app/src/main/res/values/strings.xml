@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PlaceTracker</string>
     <string name="title_activity_maps">Map</string>
-    <string name="find_current_location">Find current Location</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDG8R49BFPDKTLNtWnDbqGlfi4zWcJFdRg</string>
+    <string name="enter_address_city_or_zip_code">Enter Address, City or Zip Code</string>
+    <string name="find_current_location_on_maps">Find current Location on Maps</string>
 </resources>

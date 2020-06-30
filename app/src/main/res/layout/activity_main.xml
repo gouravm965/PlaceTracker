@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/find_current_location"
+            android:text="@string/find_current_location_on_maps"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 

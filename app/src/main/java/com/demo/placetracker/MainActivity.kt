@@ -4,11 +4,10 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,11 +18,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, MapsActivity::class.java)
             startActivity(intent)
         }
-        checkPermissions()
+        permissions()
     }
 
-    private fun checkPermissions() {
+    private fun permissions() {
         if (Build.VERSION.SDK_INT >= 23) {
+            // Android 6 and later
             if (ActivityCompat.checkSelfPermission(
                     this,
                     Manifest.permission.ACCESS_FINE_LOCATION
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
                     REQUEST_CODE
                 )
             } else {
+                // Permission has not been granted before
                 ActivityCompat.requestPermissions(
                     this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
                     REQUEST_CODE
