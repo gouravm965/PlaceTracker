@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlaceTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="find_current_location">Find current Location</string>
+</resources>
